@@ -19,13 +19,18 @@ const CotizadorProvider = ({children}) => {
         })
     }
 
+    const cotizarSeguro = () => {
+        console.log('press')
+    }
+
     return(
         <CotizadorContext.Provider
             value={{
                 datos,
                 handleChangeDatos,
                 error,
-                setError
+                setError,
+                cotizarSeguro
             }}
         >
             {children}
