@@ -12,7 +12,7 @@ const CotizadorProvider = ({children}) => {
     })
 
     const [error, setError] = useState('')
-    const [resultado, setResultado] = useState()
+    const [resultado, setResultado] = useState(0)
 
     const handleChangeDatos = e => {
         setDatos({
@@ -55,7 +55,8 @@ const CotizadorProvider = ({children}) => {
                 handleChangeDatos,
                 error,
                 setError,
-                cotizarSeguro
+                cotizarSeguro,
+                resultado
             }}
         >
             {children}
