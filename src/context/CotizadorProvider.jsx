@@ -50,7 +50,7 @@ const CotizadorProvider = ({children}) => {
         setResultado(resultado)
         setCargando(false)
             
-        }, 300);
+        }, 1000);
 
 
     }
